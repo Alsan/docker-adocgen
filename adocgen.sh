@@ -4,7 +4,7 @@
 nginx
 
 # link styles
-ln -s /styles /documents/build
+ln -s /styles /documents/build/styles
 
 # monitor source folder for changes
 inotifywait -m source -r -e create -e modify -e delete -e moved_to -e moved_from |
