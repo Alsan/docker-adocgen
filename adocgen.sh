@@ -3,6 +3,10 @@
 # start the nginx daemon
 nginx
 
+# link styles
+ln -s /styles /documents/build
+
+# monitor source folder for changes
 inotifywait -m source -r -e create -e modify -e delete -e moved_to -e moved_from |
     while read path action file; do
         dpath=${path/source/build}
