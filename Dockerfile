@@ -4,7 +4,7 @@ MAINTAINER alsan
 RUN apk update && \
     apk add --no-cache inotify-tools && \
     apk add --no-cache nginx && \
-    mkdir -p /run/nginx && \
+    mkdir -p /documents/build /run/nginx && \
     chown -R nginx:www-data /documents/build && \
     chown -R nginx:www-data /run/nginx
 
